@@ -251,11 +251,12 @@ public class UserInterface {
 	public static boolean checkUserTime(String input) {
 		
 		// Source - https://stackoverflow.com/questions/63340716/how-to-check-if-a-users-input-follows-the-correct-format
-		String regex = "[0-1][0-9]:[0-5][0-9]:[0-5][0-9]";
+		String regex0 = "[1-9]:[0-5][0-9]:[0-5][0-9]";
+		String regex1 = "[0-1][0-9]:[0-5][0-9]:[0-5][0-9]";
 		String regex2 = "[2][0-3]:[0-5][0-9]:[0-5][0-9]";
 
 		// Source - https://www.geeksforgeeks.org/string-matches-method-in-java-with-examples/
-		if(input.matches(regex) || input.matches(regex2)) {
+		if(input.matches(regex0) || input.matches(regex1) || input.matches(regex2)) {
 		    return true;
 		} else {
 		    return false;
@@ -483,7 +484,7 @@ public class UserInterface {
 					// asking for user to enter an input
 					// runs until this input is validated
 					do {
-						System.out.print("Please enter a time in military time in the hh:mm:ss format, e.g. '07:45:22': ");
+						System.out.print("Please enter a time in military time in the hh:mm:ss format, e.g. '7:45:22' or '19:45:22': ");
 						
 						// let user input time
 						userTime = scanner.next();

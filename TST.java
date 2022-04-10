@@ -1,4 +1,4 @@
-// the bulk of this program was directly from the Sedgwick Princeton
+// the bulk of this program was directly from the Sedgewick and Wayne Princeton
 // TST implementation. I removed the redundant methods that were of no
 // use to this program, and replaced the queue in this program with an
 // ArrayList, which I am much more familiar with!

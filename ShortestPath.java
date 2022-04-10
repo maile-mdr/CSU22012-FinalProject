@@ -159,7 +159,12 @@ public class ShortestPath {
 		// add the stop to the visitedStops list!
 		visitedStops.add(graph.stopsList.get(destinationStop));
 		
-		cost = weights[destinationStop];
+		if (weights[destinationStop] == Double.POSITIVE_INFINITY){
+			notFound = true;
+		}
+		else {
+			cost = weights[destinationStop];
+		}
 		
 		return visitedStops;
 	}
