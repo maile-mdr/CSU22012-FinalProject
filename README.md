@@ -3,6 +3,18 @@ My Final Project for Algorithms &amp; Data Structures II
 
 A Bus Management System for the city of Vancouver!
 
+What's part of the project:
+```
+UserInterface.java
+TST.java
+ShortestPath.java
+Graph.java
+Node.java
+Edge.java
++ the input files! (stops.txt, stop_times.txt, and transfers.txt)
+```
+**That's it! Ignore the other files, they were ~~useless~~ part of previous versions!**
+
 ## Overview
 To understand the necessary requirements of the separate parts of my program. I initially designed and implemented Parts 1-3 separately. This allowed me to spot what data structures and resources the various Parts had in common. Based on these commonalities, I streamlined and tweaked the sections of my code to avoid unnecessary duplication, notably in scanning and processing the files. My program imports the commonly used java.util, as I relied heavily on ArrayLists throughout the program due to their ease of use and the ability to increase their size. To handle user input, I relied on a Java Scanner object, and to process the files, I imported the BufferedReader. 
 
